@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            width: 50%;
+        }
+        fieldset{
+            display: flex;
+            flex-flow: column;
+        }
+    </style>
+</head>
+<body>
+    <h2>Movie Rewiew</h2>
+<!--This is movie title
+    fields:
+    -Movie Title
+    Year Show
+    Reviews
+    Review By-->
+
+
+
+    <form action="movie-form" id="movie-form">
+
+        <fieldset>
+           <label for="movie-title">Movie Title</label>
+           <input type="text" id="movie-title" name="movie-title">
+           <label for="year-shown">Year Shown</label>
+           <input type="number" id="year-shown" name="year-shown">
+           <label for="review">Reviews</label>
+           <input type="text" id="review" name="review">
+           <label for="review-by">Review By</label>
+           <input type="text" id="review-by" name="review-by">
+        </fieldset>
+        <fieldset>
+            <div>
+                <button id="add-review-btn">Add Review</button>
+                <button id="display-review-btn">Display Review</button>
+            </div>
+        </fieldset>
+    </form>
+
+    <div id="display">
+        <pre></pre>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
