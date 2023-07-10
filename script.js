@@ -37,7 +37,7 @@ function setmovieReviews(event){
 
     listMovie.innerHTML = JSON.stringify(reviewList, null, 2);
 
-    localStorage.setItem("movie_reviews", JSON.stringify)
+    localStorage.setItem("moviReviews", JSON.stringify)
     
     
     }
